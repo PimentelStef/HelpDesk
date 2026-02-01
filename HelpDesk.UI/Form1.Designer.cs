@@ -321,6 +321,7 @@
             // cmbFilterStatus
             // 
             cmbFilterStatus.FormattingEnabled = true;
+            cmbFilterStatus.Items.AddRange(new object[] { "All", "New", "In-Progress", "Resolved", "Closed" });
             cmbFilterStatus.Location = new Point(201, 63);
             cmbFilterStatus.Name = "cmbFilterStatus";
             cmbFilterStatus.Size = new Size(183, 33);
@@ -338,6 +339,7 @@
             // cmbFilterCategory
             // 
             cmbFilterCategory.FormattingEnabled = true;
+            cmbFilterCategory.Items.AddRange(new object[] { "All", "Hardware", "Software", "Network", "Account Access", "Others" });
             cmbFilterCategory.Location = new Point(14, 63);
             cmbFilterCategory.Name = "cmbFilterCategory";
             cmbFilterCategory.Size = new Size(183, 33);
