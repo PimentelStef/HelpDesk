@@ -62,5 +62,18 @@ namespace HelpDesk.DAL
         {
             return _context.SaveChanges();
         }
+        public List<Ticket> GetFiltered(int? categoryId, string status)
+        {
+            var query = _context.Tickets.AsQueryable();
+
+            if (categoryId.HasValue)
+                query = query.Where(t => t.CategoryId == categoryId.Value);
+
+            if (!string.IsNullOrEmpty(status))
+                query = query.Where(t => t.Status == status);
+
+            return query.ToList();
+        }
+
     }
 }

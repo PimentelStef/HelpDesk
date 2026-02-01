@@ -14,5 +14,7 @@ namespace HelpDesk.BLL
         (bool isOk, string message) Add(Model.Ticket ticket);
         (bool isOk, string message) Update(Model.Ticket ticket);
         (bool isOk, string message) Delete(int ticketId);
+
+        List<Model.Ticket> GetFiltered(int? categoryId, string status);
     }
 }

@@ -231,28 +231,28 @@ namespace HelpDesk.UI
         {
             try
             {
-                // Get all tickets from your service
-                var allTickets = _ticketService.GetAll(); // You need a GetAll() method in TicketService
+                int? categoryId = null;
+                string status = null;
 
-                // --- Category filter ---
-                if (cmbFilterCategory.SelectedItem.ToString() != "All")
+                // Category filter: All or valid CategoryId
+                if (cmbFilterCategory.SelectedValue != null &&
+                    Convert.ToInt32(cmbFilterCategory.SelectedValue) != 0)
                 {
-                    int categoryId = Convert.ToInt32(cmbFilterCategory.SelectedValue);
-                    allTickets = allTickets.Where(t => t.CategoryId == categoryId).ToList();
+                    categoryId = Convert.ToInt32(cmbFilterCategory.SelectedValue);
                 }
 
-                // --- Status filter ---
-                if (cmbFilterStatus.SelectedItem.ToString() != "All")
+                // Status filter: All or valid status
+                if (cmbFilterStatus.Text != "All")
                 {
-                    string status = cmbFilterStatus.SelectedItem.ToString();
-                    allTickets = allTickets.Where(t => t.Status == status).ToList();
+                    status = cmbFilterStatus.Text;
                 }
 
-                // Bind filtered tickets to DataGridView
-                dgTickets.DataSource = allTickets;
+                // ?? Fresh DB query
+                var filteredTickets = _ticketService.GetFiltered(categoryId, status);
 
-                // Update counts
-                lblCounts.Text = $"Visible: {allTickets.Count} / Total: {_ticketService.GetAll().Count}";
+                dgTickets.DataSource = filteredTickets;
+
+                lblCounts.Text = $"Visible: {filteredTickets.Count}";
                 lblStatus.Text = "Filter applied.";
             }
             catch (Exception ex)
@@ -265,17 +265,13 @@ namespace HelpDesk.UI
         {
             try
             {
-                // Reset ComboBoxes
-                cmbFilterCategory.SelectedIndex = 0; // "All"
-                cmbFilterStatus.SelectedIndex = 0;   // "All"
+                cmbFilterCategory.SelectedIndex = 0; // All
+                cmbFilterStatus.SelectedIndex = 0;   // All
 
-                // Reload all tickets from service
-                var allTickets = _ticketService.GetAll();
-                dgTickets.DataSource = allTickets;
+                // Fresh DB reload
+                LoadTickets();
 
-                // Update counts and status
-                lblCounts.Text = $"Visible: {allTickets.Count} / Total: {allTickets.Count}";
-                lblStatus.Text = "Filter reset.";
+                lblStatus.Text = "Filter reset!";
             }
             catch (Exception ex)
             {

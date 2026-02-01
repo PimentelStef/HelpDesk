@@ -105,6 +105,11 @@ namespace HelpDesk.BLL
                 if (string.IsNullOrEmpty(ticket.Status))
                     return (false, "Status must be selected!");
 
+                var validStatuses = new[] { "New", "In-Progress", "Resolved", "Closed" };
+                if (!
+                validStatuses.Contains(ticket.Status))
+                    return (false, "Invalid ticket status!");
+
                 // Preserve original DateCreated
                 ticket.DateCreated = existingTicket.DateCreated;
 
@@ -193,6 +198,10 @@ namespace HelpDesk.BLL
         public List<Model.Ticket> GetAll()
         {
             return _ticketRepository.GetAll(); // return all tickets from repository
+        }
+        public List<Model.Ticket> GetFiltered(int? categoryId, string status)
+        {
+            return _ticketRepository.GetFiltered(categoryId, status);
         }
     }
 }

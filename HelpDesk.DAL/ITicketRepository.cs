@@ -14,6 +14,7 @@ namespace HelpDesk.DAL
         void Add(Ticket ticket);
         void Update(Ticket ticket);
         void Delete(int id);
+        List<Ticket> GetFiltered(int? categoryId, string status);
         int Save();
     }
 }
