@@ -86,21 +86,18 @@
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(txtIssueTitle);
             groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(9, 38);
-            groupBox1.Margin = new Padding(2);
+            groupBox1.Location = new Point(13, 63);
             groupBox1.Name = "groupBox1";
-            groupBox1.Padding = new Padding(2);
-            groupBox1.Size = new Size(432, 374);
+            groupBox1.Size = new Size(617, 623);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
             groupBox1.Text = "Details";
             // 
             // btnUpdateTicket
             // 
-            btnUpdateTicket.Location = new Point(225, 332);
-            btnUpdateTicket.Margin = new Padding(2);
+            btnUpdateTicket.Location = new Point(321, 553);
             btnUpdateTicket.Name = "btnUpdateTicket";
-            btnUpdateTicket.Size = new Size(158, 30);
+            btnUpdateTicket.Size = new Size(226, 50);
             btnUpdateTicket.TabIndex = 15;
             btnUpdateTicket.Text = "Update Ticket";
             btnUpdateTicket.UseVisualStyleBackColor = true;
@@ -108,10 +105,9 @@
             // 
             // btnCreateTicket
             // 
-            btnCreateTicket.Location = new Point(48, 332);
-            btnCreateTicket.Margin = new Padding(2);
+            btnCreateTicket.Location = new Point(69, 553);
             btnCreateTicket.Name = "btnCreateTicket";
-            btnCreateTicket.Size = new Size(162, 30);
+            btnCreateTicket.Size = new Size(231, 50);
             btnCreateTicket.TabIndex = 14;
             btnCreateTicket.Text = "Create Ticket";
             btnCreateTicket.UseVisualStyleBackColor = true;
@@ -119,133 +115,119 @@
             // 
             // txtResolution
             // 
-            txtResolution.Location = new Point(94, 214);
-            txtResolution.Margin = new Padding(2);
+            txtResolution.Location = new Point(134, 357);
             txtResolution.Multiline = true;
             txtResolution.Name = "txtResolution";
-            txtResolution.Size = new Size(325, 84);
+            txtResolution.Size = new Size(463, 137);
             txtResolution.TabIndex = 13;
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(11, 214);
-            label8.Margin = new Padding(2, 0, 2, 0);
+            label8.Location = new Point(16, 357);
             label8.Name = "label8";
-            label8.Size = new Size(66, 15);
+            label8.Size = new Size(99, 25);
             label8.TabIndex = 12;
             label8.Text = "Resolution:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(11, 305);
-            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Location = new Point(16, 508);
             label7.Name = "label7";
-            label7.Size = new Size(78, 15);
+            label7.Size = new Size(119, 25);
             label7.TabIndex = 11;
             label7.Text = "Date Created:";
             // 
             // dateTimePicker1
             // 
             dateTimePicker1.Enabled = false;
-            dateTimePicker1.Location = new Point(94, 302);
-            dateTimePicker1.Margin = new Padding(2);
+            dateTimePicker1.Location = new Point(134, 503);
             dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(325, 23);
+            dateTimePicker1.Size = new Size(463, 31);
             dateTimePicker1.TabIndex = 10;
             // 
             // cmbStatus
             // 
             cmbStatus.FormattingEnabled = true;
-            cmbStatus.Location = new Point(94, 187);
-            cmbStatus.Margin = new Padding(2);
+            cmbStatus.Location = new Point(134, 312);
             cmbStatus.Name = "cmbStatus";
-            cmbStatus.Size = new Size(325, 23);
+            cmbStatus.Size = new Size(463, 33);
             cmbStatus.TabIndex = 9;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(11, 187);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Location = new Point(16, 312);
             label6.Name = "label6";
-            label6.Size = new Size(42, 15);
+            label6.Size = new Size(64, 25);
             label6.TabIndex = 8;
             label6.Text = "Status:";
             // 
             // cmbAssignedTo
             // 
             cmbAssignedTo.FormattingEnabled = true;
-            cmbAssignedTo.Location = new Point(94, 158);
-            cmbAssignedTo.Margin = new Padding(2);
+            cmbAssignedTo.Location = new Point(134, 263);
             cmbAssignedTo.Name = "cmbAssignedTo";
-            cmbAssignedTo.Size = new Size(325, 23);
+            cmbAssignedTo.Size = new Size(463, 33);
             cmbAssignedTo.TabIndex = 7;
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(11, 160);
-            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Location = new Point(16, 267);
             label5.Name = "label5";
-            label5.Size = new Size(60, 15);
+            label5.Size = new Size(92, 25);
             label5.TabIndex = 6;
             label5.Text = "Assign To:";
             // 
             // cmbCategory
             // 
             cmbCategory.FormattingEnabled = true;
-            cmbCategory.Location = new Point(94, 132);
-            cmbCategory.Margin = new Padding(2);
+            cmbCategory.Location = new Point(134, 220);
             cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(325, 23);
+            cmbCategory.Size = new Size(463, 33);
             cmbCategory.TabIndex = 5;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(11, 134);
-            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Location = new Point(16, 223);
             label4.Name = "label4";
-            label4.Size = new Size(58, 15);
+            label4.Size = new Size(88, 25);
             label4.TabIndex = 4;
             label4.Text = "Category:";
             // 
             // txtDescription
             // 
-            txtDescription.Location = new Point(94, 46);
-            txtDescription.Margin = new Padding(2);
+            txtDescription.Location = new Point(134, 77);
             txtDescription.Multiline = true;
             txtDescription.Name = "txtDescription";
-            txtDescription.Size = new Size(325, 84);
+            txtDescription.Size = new Size(463, 137);
             txtDescription.TabIndex = 3;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(11, 43);
-            label3.Margin = new Padding(2, 0, 2, 0);
+            label3.Location = new Point(16, 72);
             label3.Name = "label3";
-            label3.Size = new Size(70, 15);
+            label3.Size = new Size(106, 25);
             label3.TabIndex = 2;
             label3.Text = "Description:";
             // 
             // txtIssueTitle
             // 
-            txtIssueTitle.Location = new Point(94, 22);
-            txtIssueTitle.Margin = new Padding(2);
+            txtIssueTitle.Location = new Point(134, 37);
             txtIssueTitle.Name = "txtIssueTitle";
-            txtIssueTitle.Size = new Size(325, 23);
+            txtIssueTitle.Size = new Size(463, 31);
             txtIssueTitle.TabIndex = 1;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(11, 24);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(16, 40);
             label2.Name = "label2";
-            label2.Size = new Size(32, 15);
+            label2.Size = new Size(48, 25);
             label2.TabIndex = 0;
             label2.Text = "Title:";
             // 
@@ -253,10 +235,9 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold);
-            label1.Location = new Point(8, 5);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(11, 8);
             label1.Name = "label1";
-            label1.Size = new Size(204, 25);
+            label1.Size = new Size(301, 38);
             label1.TabIndex = 1;
             label1.Text = "HelpDesk Application";
             // 
@@ -265,11 +246,9 @@
             groupBox2.Controls.Add(chkConfirmDelete);
             groupBox2.Controls.Add(btnClearAll);
             groupBox2.Controls.Add(btnDeleleteTicket);
-            groupBox2.Location = new Point(9, 416);
-            groupBox2.Margin = new Padding(2);
+            groupBox2.Location = new Point(13, 693);
             groupBox2.Name = "groupBox2";
-            groupBox2.Padding = new Padding(2);
-            groupBox2.Size = new Size(432, 85);
+            groupBox2.Size = new Size(617, 142);
             groupBox2.TabIndex = 2;
             groupBox2.TabStop = false;
             groupBox2.Text = "Actions Management";
@@ -277,31 +256,28 @@
             // chkConfirmDelete
             // 
             chkConfirmDelete.AutoSize = true;
-            chkConfirmDelete.Location = new Point(48, 58);
-            chkConfirmDelete.Margin = new Padding(2);
+            chkConfirmDelete.Location = new Point(69, 97);
             chkConfirmDelete.Name = "chkConfirmDelete";
-            chkConfirmDelete.Size = new Size(111, 19);
+            chkConfirmDelete.Size = new Size(165, 29);
             chkConfirmDelete.TabIndex = 17;
             chkConfirmDelete.Text = "Confirm Delete?";
             chkConfirmDelete.UseVisualStyleBackColor = true;
             // 
             // btnClearAll
             // 
-            btnClearAll.Location = new Point(225, 24);
-            btnClearAll.Margin = new Padding(2);
+            btnClearAll.Location = new Point(321, 40);
             btnClearAll.Name = "btnClearAll";
-            btnClearAll.Size = new Size(162, 30);
+            btnClearAll.Size = new Size(231, 50);
             btnClearAll.TabIndex = 16;
-            btnClearAll.Text = "Delete Ticket";
+            btnClearAll.Text = "Clear All Ticket";
             btnClearAll.UseVisualStyleBackColor = true;
             btnClearAll.Click += btnClearAll_Click;
             // 
             // btnDeleleteTicket
             // 
-            btnDeleleteTicket.Location = new Point(48, 24);
-            btnDeleleteTicket.Margin = new Padding(2);
+            btnDeleleteTicket.Location = new Point(69, 40);
             btnDeleleteTicket.Name = "btnDeleleteTicket";
-            btnDeleleteTicket.Size = new Size(162, 30);
+            btnDeleleteTicket.Size = new Size(231, 50);
             btnDeleleteTicket.TabIndex = 15;
             btnDeleleteTicket.Text = "Delete Ticket";
             btnDeleleteTicket.UseVisualStyleBackColor = true;
@@ -315,21 +291,18 @@
             groupBox3.Controls.Add(label10);
             groupBox3.Controls.Add(cmbFilterCategory);
             groupBox3.Controls.Add(label9);
-            groupBox3.Location = new Point(445, 38);
-            groupBox3.Margin = new Padding(2);
+            groupBox3.Location = new Point(636, 63);
             groupBox3.Name = "groupBox3";
-            groupBox3.Padding = new Padding(2);
-            groupBox3.Size = new Size(470, 68);
+            groupBox3.Size = new Size(671, 113);
             groupBox3.TabIndex = 3;
             groupBox3.TabStop = false;
             groupBox3.Text = "Searching and Filtering";
             // 
             // btnResetFilter
             // 
-            btnResetFilter.Location = new Point(364, 37);
-            btnResetFilter.Margin = new Padding(2);
+            btnResetFilter.Location = new Point(520, 62);
             btnResetFilter.Name = "btnResetFilter";
-            btnResetFilter.Size = new Size(99, 20);
+            btnResetFilter.Size = new Size(141, 33);
             btnResetFilter.TabIndex = 5;
             btnResetFilter.Text = "Reset Filter";
             btnResetFilter.UseVisualStyleBackColor = true;
@@ -337,10 +310,9 @@
             // 
             // btnApplyFilter
             // 
-            btnApplyFilter.Location = new Point(273, 37);
-            btnApplyFilter.Margin = new Padding(2);
+            btnApplyFilter.Location = new Point(390, 62);
             btnApplyFilter.Name = "btnApplyFilter";
-            btnApplyFilter.Size = new Size(87, 20);
+            btnApplyFilter.Size = new Size(124, 33);
             btnApplyFilter.TabIndex = 4;
             btnApplyFilter.Text = "Apply Filter";
             btnApplyFilter.UseVisualStyleBackColor = true;
@@ -349,49 +321,44 @@
             // cmbFilterStatus
             // 
             cmbFilterStatus.FormattingEnabled = true;
-            cmbFilterStatus.Location = new Point(141, 38);
-            cmbFilterStatus.Margin = new Padding(2);
+            cmbFilterStatus.Location = new Point(201, 63);
             cmbFilterStatus.Name = "cmbFilterStatus";
-            cmbFilterStatus.Size = new Size(129, 23);
+            cmbFilterStatus.Size = new Size(183, 33);
             cmbFilterStatus.TabIndex = 3;
             // 
             // label10
             // 
             label10.AutoSize = true;
-            label10.Location = new Point(141, 21);
-            label10.Margin = new Padding(2, 0, 2, 0);
+            label10.Location = new Point(201, 35);
             label10.Name = "label10";
-            label10.Size = new Size(68, 15);
+            label10.Size = new Size(103, 25);
             label10.TabIndex = 2;
             label10.Text = "Filter Status";
             // 
             // cmbFilterCategory
             // 
             cmbFilterCategory.FormattingEnabled = true;
-            cmbFilterCategory.Location = new Point(10, 38);
-            cmbFilterCategory.Margin = new Padding(2);
+            cmbFilterCategory.Location = new Point(14, 63);
             cmbFilterCategory.Name = "cmbFilterCategory";
-            cmbFilterCategory.Size = new Size(129, 23);
+            cmbFilterCategory.Size = new Size(183, 33);
             cmbFilterCategory.TabIndex = 1;
             // 
             // label9
             // 
             label9.AutoSize = true;
-            label9.Location = new Point(10, 21);
-            label9.Margin = new Padding(2, 0, 2, 0);
+            label9.Location = new Point(14, 35);
             label9.Name = "label9";
-            label9.Size = new Size(84, 15);
+            label9.Size = new Size(127, 25);
             label9.TabIndex = 0;
             label9.Text = "Filter Category";
             // 
             // dgTickets
             // 
             dgTickets.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgTickets.Location = new Point(445, 110);
-            dgTickets.Margin = new Padding(2);
+            dgTickets.Location = new Point(636, 183);
             dgTickets.Name = "dgTickets";
             dgTickets.RowHeadersWidth = 62;
-            dgTickets.Size = new Size(470, 391);
+            dgTickets.Size = new Size(671, 652);
             dgTickets.TabIndex = 4;
             dgTickets.SelectionChanged += dgTickets_SelectionChanged;
             // 
@@ -399,35 +366,33 @@
             // 
             statusStrip1.ImageScalingSize = new Size(24, 24);
             statusStrip1.Items.AddRange(new ToolStripItem[] { lblStatus, lblCounts });
-            statusStrip1.Location = new Point(0, 497);
+            statusStrip1.Location = new Point(0, 843);
             statusStrip1.Name = "statusStrip1";
-            statusStrip1.Padding = new Padding(1, 0, 10, 0);
-            statusStrip1.Size = new Size(923, 22);
+            statusStrip1.Size = new Size(1319, 22);
             statusStrip1.TabIndex = 5;
             statusStrip1.Text = "statusStrip1";
             // 
             // lblStatus
             // 
             lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(0, 17);
+            lblStatus.Size = new Size(0, 15);
             // 
             // lblCounts
             // 
             lblCounts.Name = "lblCounts";
-            lblCounts.Size = new Size(0, 17);
+            lblCounts.Size = new Size(0, 15);
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(923, 519);
+            ClientSize = new Size(1319, 865);
             Controls.Add(statusStrip1);
             Controls.Add(dgTickets);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(label1);
             Controls.Add(groupBox1);
-            Margin = new Padding(2);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "HelpDesk Application";
